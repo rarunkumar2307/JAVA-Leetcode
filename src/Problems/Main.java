@@ -179,3 +179,23 @@ class Long {
 
     }
 }
+
+class sum{
+    public static void main(String[] args) {
+        int[] arr={1,3,4,5,4,2,2};
+        int leftSum=0;
+        int rightSum=0;
+        for(int i=0,j=arr.length-1;i<arr.length;i++,j--){
+
+            if(i>=j){
+                if(leftSum==rightSum) System.out.println(i);
+                else System.out.println("Not equal");
+                break;
+            }
+
+            leftSum+=arr[i];
+            rightSum+=arr[j];
+
+        }
+    }
+}
