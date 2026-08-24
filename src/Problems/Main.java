@@ -197,5 +197,82 @@ class sum{
             rightSum+=arr[j];
 
         }
+        swap(arr);
+    }
+
+    static void swap(int[] arr) {
+        for (int i = 0, j = arr.length - 1; i < arr.length; i++, j--) {
+
+            if(i==j) break;
+
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+        for(int res:arr) System.out.print(res+" ");
     }
 }
+
+class grater{
+    public static void main(String[] args) {
+        int[] arr={5,3,2,1};
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]>arr[i+1]) System.out.print(arr[i]+" ");
+        }
+        System.out.print(arr[arr.length-1]);
+    }
+}
+
+
+class random{
+    public static void main(String[] args) {
+        int[] arr={2,1,-3,-6,12,-9};
+        int[] arr2=new int[arr.length];
+        int l=0;
+        int r=1;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>0){
+                arr2[l]=arr[i];
+                l+=2;
+            }else{
+                arr2[r]=arr[i];
+                r+=2;
+            }
+        }
+        for(int res:arr2) System.out.print(res+" ");
+    }
+}
+
+
+class printMaxS{
+    public static void main(String[] args) {
+        int[] arr={1,2,3,1};
+
+        int ind=0;
+        int length=1;
+        int maxlength=1;
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]+1==arr[i+1]) {
+                length++;
+            }
+            else{
+                if(length>maxlength){
+                    maxlength=length;
+                    ind=i-length+1;
+                }
+                length=1;
+            }
+        }
+        if(maxlength<length){
+            maxlength=length;
+            ind=arr.length-length;
+        }
+        System.out.print("MAX SEQUENCE LENGTH :"+maxlength+"\n");
+
+        for(int i=ind;i<ind+maxlength;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
+
