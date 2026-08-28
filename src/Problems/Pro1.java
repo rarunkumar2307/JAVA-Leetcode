@@ -1,22 +1,19 @@
 package Problems;
 
-import java.util.HashMap;
-import java.util.HashSet;
-
 public class Pro1 {
     public static void main(String[] args) {
 
-//        int[] arr1={1,2,3,4,5,6};
-//        int k=3;
-//        shift(arr1,k);
-//        for(int res:arr1) System.out.print(res+" ");
-//        System.out.println();
-//
-//        int[] arr2={10,5,20,8,15,7};
-//        System.out.println(maxi(arr2));
-//
-//        int[] arr3={1,2,2,3,4,4,5,1};
-//        System.out.println(sub(arr3));
+        int[] arr1={1,2,3,4,5,6};
+        int k=3;
+        shift(arr1,k);
+        for(int res:arr1) System.out.print(res+" ");
+        System.out.println();
+
+        int[] arr2={10,5,20,8,15,7};
+        System.out.println(maxi(arr2));
+
+        int[] arr3={1,2,2,3,4,4,5,1};
+        System.out.println(sub(arr3));
 
         int[] arr4={4,2,4,2,7,2,2};
         peak(arr4);
