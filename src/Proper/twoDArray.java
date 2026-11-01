@@ -25,9 +25,9 @@ public class twoDArray {
             }
         }
         System.out.println();
-        System.out.println(toInt("1234")+1);
+        System.out.print(toInt("1234")+1);
     }
-    static int toInt(String n){
+     public static int toInt(String n){
         int r=0;
         for(int i=0;i<n.length();i++){
             char c=n.charAt(i);
