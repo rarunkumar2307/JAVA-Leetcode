@@ -1,16 +1,16 @@
 package Problems;
 
 public class Pro6 {
-    public static void main(String[] args) {
+    static void main() {
         String s1="babad";
-        System.out.println(LongPoli(s1));
+        System.out.print(LongPoli(s1));
 
         String s2="aaabbccdaa";
-        System.out.println(RemoveDup(s2));
+        System.out.print(RemoveDup(s2));
 
         int[] ar1={2,5,12,8,12,15};
         int t=10;
-        System.out.println(Closest(ar1,t));
+        System.out.print(Closest(ar1,t));
 
         int[][] ar2={
                 {1,2,3},
@@ -18,7 +18,7 @@ public class Pro6 {
                 {7,8,9}
         };
 
-        System.out.println(SumPath(ar2));
+        System.out.print(SumPath(ar2));
     }
     static String LongPoli(String s){
         String r="";
@@ -55,7 +55,7 @@ public class Pro6 {
     static int Closest(int[] arr,int t){
         int min=Integer.MAX_VALUE;
         int index=Integer.MAX_VALUE;
-        for(int i=0;i<arr.length;i++){
+        for(int i:arr){
             if(min>Math.abs(arr[i]-t)){
                 min=Math.abs(arr[i]-t);
                 index=arr[i];
