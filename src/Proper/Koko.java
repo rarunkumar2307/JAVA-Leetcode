@@ -12,11 +12,11 @@ public class Koko {
         for(int p:piles) high =Math.max(high,p);
         while(low< high){
             int mid=low+(high-low)/2;
-            int hr=0;
+            int hour =0;
             for(int p:piles){
-                hr+=(p+mid-1)/mid;
+                hour +=(p+mid-1)/mid;
             }
-            if(hr<=h) high=mid;
+            if(hour <=h) high=mid;
             else low=mid+1;
         }
         return low;
