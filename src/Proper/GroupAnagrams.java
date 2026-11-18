@@ -1,7 +1,7 @@
-package String;
+package Proper;
 import java.util.*;
 
-public class Dummy {
+public class GroupAnagrams {
     static void main() {
         String[] s={"eat","tea","tan","ate","nat","bat"};
         List<List<String>> list=Solution.groupAnagrams(s);
